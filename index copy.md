@@ -9,7 +9,7 @@ If you believe it is time for a **standard approach to web development**, this c
 
 Set aside **about 80 hours over eight to sixteen weeks** to assimilate the material and do the exercices. This course assumes you use Mac OS or Linux; if you use Windows, please make sure you can [install Vagrant](http://www.sitepoint.com/getting-started-vagrant-windows/). Set aside a small budget---less than a hundred dollars---to launch servers in the cloud for testing and learning. The classes---all of them---are offered for free, covering the **strict minimum you need to know, with real-world examples and exercices**, organized in the following topics:
 
- * [*Class 1: Basics*](class-01-basics): How to get help on this course; using the command line; setting up a local development environment, and ssh keys. We'll use [Docker](https://www.docker.com) for local development, testing, and deployment.
+ * *Class 1: Basics*: How to get help on this course; using the command line; setting up a local development environment, and ssh keys. We'll use [Docker](https://www.docker.com) for local development, testing, and deployment. [Coming soon]
  * *Class 2: Version control*: why and how to use [git](http://git-scm.com) (including branches and rebasing) for everything. [Coming soon]
  * *Class 3: Drupal*: We'll build a real, nontrivial [Drupal](https://www.drupal.org) site and maintain it all along the course. [Coming soon]
  * *Class 4: Jeckyll*: You love Drupal, but a complex CMS it not for everything. Learn how to build a beautiful site in an hour with [Jekyll](http://jekyllrb.com), and host it for free. [Coming soon]
