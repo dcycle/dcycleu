@@ -1,11 +1,11 @@
 # Site settings
 title: Dcycle U.
-header-img: ""
+header-img: img/datemachinedark.jpg
 email: your-email@yourdomain.com
 description: "Write your site description here. It will be used as your sites meta description as well!"
 baseurl: ""
 url: "http://u.dcycle.com/"
-twitter_username: dcycleproject
+twitter_username: dcycleprojects
 github_username:  dcycleproject
 
 # Build settings
