@@ -44,6 +44,8 @@ Hands on: your online identity and GitHub account
 
 All along this course, you will be opening accounts on various sites and services. If you don't already have a nickname, choose one now, and open your first account on [GitHub](https://github.com) if you don't have one already. (My online identity is [alberto56](https://github.com/alberto56)).
 
+**Make sure you _verify_ your email address by [clicking on the verify link](https://help.github.com/articles/verifying-your-email-address/) that GitHub sends you, or else you might get some strange behaviour from GitHub later on.**
+
 Hands on: fork your first project
 -----
 
@@ -128,6 +130,14 @@ Getting support for this course
 
 If you find a typo, an error, or have a question, encounter an error when following instructions, or require clarification (or simply want to share something), you should report these in the [DcycleU issue queue](https://github.com/dcycleproject/dcycleu/issues). This course and its associated website is an open-source GitHub project whose [source code you can examine](https://github.com/dcycleproject/dcycleu) and copy (as long as you attribute it to Dcycle).
 
+Troubleshooting
+-----
+
+By now you should have a working site as a project on your GitHub account, with an issue queue and at least one issue. If you had any problems until now, you will have submitted an issue on the Dcycle U. issue queue.
+
+ * If your site is not updated as expected on GitHub, make sure you have [verified your email address](https://help.github.com/articles/verifying-your-email-address/), or else your site may update [once but not thereafter](http://stackoverflow.com/questions/20422279/github-pages-are-not-updating).
+ * If you have a verified email address and your site is still not updating, see [Troubleshooting GitHub Pages Build Failtures, on GitHub](https://help.github.com/articles/troubleshooting-github-pages-build-failures/).
+ 
 Before moving on:
 -----
 
