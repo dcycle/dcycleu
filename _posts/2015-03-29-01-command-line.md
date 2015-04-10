@@ -97,7 +97,7 @@ A plain text editor is different from Word or OpenOffice in that it only edits t
 
 Some of the editors used by my colleagues include:
 
- * [Smultron](https://www.peterborgapps.com/smultron/) (commercial)
+ * [Smultron](https://www.peterborgapps.com/smultron/) (commercial): good search and replace interface, good proper formatting options. 
  * [Taco](http://tacosw.com) (commercial)
  * [Netbeans](https://netbeans.org) (open source)
 
