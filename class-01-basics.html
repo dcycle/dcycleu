@@ -6,7 +6,7 @@ description: "Class 1: Basics"
 <div class="breadcrum"><a href="/">Home</a>&nbsp;&gt;&nbspClass 1: Basics</div>
 
 {% for post in site.posts reversed %}
-  {% if post.class == 1 %}
+  {% if post.class == "1" %}
     <div class="post-preview">
         <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="post-title">            {{ post.title }}

@@ -5,7 +5,7 @@ subtitle:   "How to approach this class, minimum requirements, using version con
 date:       2015-03-27 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"
-class:      1
+class:      "1"
 order:      100
 parent:     "<a href=\"/class-01-basics\">Class 1: Basics</a>"
 ---
@@ -137,7 +137,7 @@ By now you should have a working site as a project on your GitHub account, with 
 
  * If your site is not updated as expected on GitHub, make sure you have [verified your email address](https://help.github.com/articles/verifying-your-email-address/), or else your site may update [once but not thereafter](http://stackoverflow.com/questions/20422279/github-pages-are-not-updating).
  * If you have a verified email address and your site is still not updating, see [Troubleshooting GitHub Pages Build Failtures, on GitHub](https://help.github.com/articles/troubleshooting-github-pages-build-failures/).
- 
+
 Before moving on:
 -----
 

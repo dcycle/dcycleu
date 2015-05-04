@@ -12,5 +12,5 @@ github_username:  dcycleproject
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 5
+paginate: 99
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

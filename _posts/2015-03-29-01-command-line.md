@@ -5,7 +5,7 @@ subtitle:   "The tools and knowledge you'll need to work on your local machine."
 date:       2015-03-29 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"
-class:      1
+class:      "1"
 parent:     "<a href=\"/class-01-basics\">Class 1: Basics</a>"
 ---
 

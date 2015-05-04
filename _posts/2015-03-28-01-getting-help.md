@@ -5,7 +5,7 @@ subtitle:   "What to do when you are stuck: there is an art to asking for help, 
 date:       2015-03-28 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"
-class:      1
+class:      "1"
 order:      100
 parent:     "<a href=\"/class-01-basics\">Class 1: Basics</a>"
 ---
