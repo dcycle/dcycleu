@@ -95,6 +95,12 @@ A plain-text editor
 
 A plain text editor is different from Word or OpenOffice in that it only edits text. Often, it will also highlight special keywords in html, php, or other programming languages. Everyone seems to have their preferences for this, but to get started you could try the free [TextWrangler](http://www.barebones.com/products/textwrangler/) for Mac OS X. The article [The Best Free Text Editors for Windows, Linux, and Mac, on How-To Geek](http://www.howtogeek.com/112385/the-best-free-text-editors-for-windows-and-linux/) provides a list of editors. If you have your own editor, [submit an issue](https://github.com/dcycleproject/dcycleu/issues) suggesting it be added to this section, and why.
 
+Some of the editors used by my colleagues include:
+
+ * [Smultron](https://www.peterborgapps.com/smultron/) (commercial): good search and replace interface, good proper formatting options. 
+ * [Taco](http://tacosw.com) (commercial)
+ * [Netbeans](https://netbeans.org) (open source)
+
 Setting up your development environment
 -----
 
