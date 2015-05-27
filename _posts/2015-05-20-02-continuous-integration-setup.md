@@ -63,5 +63,37 @@ On the ensuing page, after 30 seconds or so, Circle will give you the state of t
 Setting up your project to be tracked by the CircleCI continuous integration server
 -----
 
-Every continuous integration server has a different file it needs to tell it what to do in order to build your project. In the case of CircleCI, it needs a file called `circle.yml`. Create it at the root of your project, on your computer.
+Every continuous integration server has a different file it needs to tell it what to do in order to build your project. In the case of CircleCI, it needs a file called `circle.yml`. Create it at the root of your project, on your computer. Because we are using DevOps, the requirements to build our project are simple: only Docker is required.
 
+To test that our code makes sense, we will build the docker machine, and then run the `./scripts/jekyll-build.sh` script. To tell CircleCI that this is what needs to be done to build and test our code, our `circle.yml` file needs to contain:
+
+    machine:
+      services:
+        - docker
+
+    test:
+      override:
+        - ./scripts/dev.sh
+        - ./scripts/jekyll-build.sh
+
+
+$ go-sshagent
+Copied sshkey to clipboard. Will clear in 45 seconds.
+Agent pid 41732
+Enter passphrase for /Users/albert/.ssh/id_rsa:
+Identity added: /Users/albert/.ssh/id_rsa (/Users/albert/.ssh/id_rsa)
+Identity added: /Users/albert/.ssh/id_dsa (/Users/albert/.ssh/id_dsa)
+$ git push origin gh-pages
+Everything up-to-date
+$ git commit -am 'Adding CircleCI support'
+[gh-pages dd79c24] Adding CircleCI support
+ 1 file changed, 9 insertions(+)
+ create mode 100644 circle.yml
+$ git push origin gh-pages
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:dcycleproject/dcycleu.git
+   a2dc811..dd79c24  gh-pages -> gh-pages

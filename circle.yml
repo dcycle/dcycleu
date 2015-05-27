@@ -4,6 +4,4 @@ machine:
 
 test:
   override:
-    - ./scripts/dev.sh
-    - ./scripts/jekyll-build.sh
-
+    - docker build -f="Dockerfile-dev" .
