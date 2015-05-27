@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "2.2 Using this course, your first project, and getting support"
-subtitle:   "How to approach this class, minimum requirements, using version control and GitHub to create your first project, the issue queue, and getting support."
+title:      "2.2 Your first passes and failures"
+subtitle:   "Experiencing your first failing build, and your first passing build."
 date:       2015-05-21 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"

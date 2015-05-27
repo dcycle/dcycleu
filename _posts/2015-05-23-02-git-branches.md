@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "2.4 Using this course, your first project, and getting support"
-subtitle:   "How to approach this class, minimum requirements, using version control and GitHub to create your first project, the issue queue, and getting support."
+title:      "2.4 Git branches and continuous integration"
+subtitle:   "Basic git branching, and why having a stable and an unstable branch is useful."
 date:       2015-05-23 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"

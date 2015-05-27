@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "2.5 Using this course, your first project, and getting support"
-subtitle:   "How to approach this class, minimum requirements, using version control and GitHub to create your first project, the issue queue, and getting support."
+title:      "2.5 Continuous deployment"
+subtitle:   "Automating deployment from your unstable branch to your stable branch when your build passes."
 date:       2015-05-24 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"
