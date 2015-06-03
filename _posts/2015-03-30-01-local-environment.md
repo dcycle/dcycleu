@@ -150,6 +150,29 @@ Because of shared folders, `~/share/startbootstrap-clean-blog-jekyll` ad `~/Docu
 Now change your title locally (on your computer), back to what it was before, then we need to commit the change and push it back to GitHub.
 
     core@core-01 ~/share/startbootstrap-clean-blog-jekyll $ git commit -am 'changed title'
+
+If this is the first time you are running git commit, git will insist on knowing how you are:
+
+    *** Please tell me who you are.
+
+    Run
+
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+
+    to set your account's default identity.
+    Omit --global to set the identity only in this repository.
+
+    fatal: unable to auto-detect email address (got 'core@core-01.(none)')
+
+This information is important to be able to trace changes to code, especially when more than one person is involved. It is something you'll need to do only once; run the `git config` ... commands listed above, but with your own name and email address, then commit again.
+
+    core@core-01 ~/share/startbootstrap-clean-blog-jekyll $ git config --global user.email "yourname@example.com"
+    core@core-01 ~/share/startbootstrap-clean-blog-jekyll $ git config --global user.name "Your Name"
+    core@core-01 ~/share/startbootstrap-clean-blog-jekyll $ git commit -am 'changed title'
+
+Once you have committed your change, you can push your change to GitHub:
+
     core@core-01 ~/share/startbootstrap-clean-blog-jekyll $ git push origin gh-pages
 
 A word on what to do if you laptop on the Vagrant CoreOS VM get unsynchronized
