@@ -73,8 +73,9 @@ To test that our code makes sense, we will build the docker machine, and then ru
 
     test:
       override:
-        - ./scripts/dev.sh
-        - ./scripts/jekyll-build.sh
+        - docker build .
+
+
 
 
 $ go-sshagent
