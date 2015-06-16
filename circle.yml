@@ -4,4 +4,4 @@ machine:
 
 test:
   override:
-    - docker build -f="Dockerfile-dev" .
+    - ./scripts/dev.sh
