@@ -7,8 +7,3 @@ echo "For production, please use ./scripts/prod.sh instead."
 echo ""
 
 ./scripts/build-dev.sh
-
-echo ""
-echo "For now we are unable to build the site continually; please call"
-echo "./scripts/jekyll-build every time you want to build your site."
-echo ""
