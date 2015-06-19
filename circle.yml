@@ -1,4 +1,7 @@
+dependencies:
+  pre:
+    - curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.6.0-circleci'; chmod 0755 /usr/bin/docker; true
+
 test:
   override:
-    - sudo curl -L -o /usr/bin/docker 'http://s3-external-1.amazonaws.com/circle-downloads/docker-1.6.0-circleci'; chmod 0755 /usr/bin/docker; chown ubuntu /usr/bin/docker; true
-    - ./scripts/dev.sh
+    - docker version
