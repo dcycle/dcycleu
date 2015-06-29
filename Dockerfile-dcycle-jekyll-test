@@ -1,0 +1,3 @@
+from jekyll/jekyll:latest
+
+ADD . /srv/jekyll/
