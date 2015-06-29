@@ -5,5 +5,4 @@ dependencies:
 
 test:
   override:
-    - docker version
-    - ./scripts/dev.sh
+    - ./scripts/deploy.sh -p80
