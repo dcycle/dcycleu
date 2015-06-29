@@ -5,4 +5,4 @@ dependencies:
 
 test:
   override:
-    - ./dcycle/deploy.sh -p80
+    - ./dcycle/deploy.sh -p80 -etest

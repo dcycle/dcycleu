@@ -74,11 +74,22 @@ To test that our code makes sense, we must build the docker machine, using the `
 
     test:
       override:
-        - ./dcycle/deploy.sh -p80
+        - ./dcycle/deploy.sh -p80 -etest
 
 Once you added this file (with `git add`), committed your change and pushed it back to GitHub, within minutes you will have a passing build on your [CircleCI](https://circleci.com) dashboard:
 
+<img src="/img/2015-05-20-02-circle-success.png" />
 
 
 To see what a failing build looks like, introduce an error into your `_config.yml` file: change `title:` to `title::` with two colons. This is an error and your build should fail.
+
+<img src="/img/2015-05-20-02-circle-error.png" />
+
+Fix your error, and now you should see that your build is "Fixed".
+
+Conclusion
+-----
+
+We just saw a very simple, but very powerful, implementation of continuous integration. Starting now, you are in a position to formally guarantee that your code is in a passing state. And if it's not, you will know when it broke and what broke it, so you'll be able to fix it that much quicker.
+
 

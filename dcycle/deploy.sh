@@ -15,18 +15,25 @@ if [ "$#" -eq "0" ]
   then
     cat './dcycle/readme/deploy.txt'
 else
-  while getopts ":p:n:" opt; do
+  while getopts ":p:n:e:" opt; do
     case $opt in
       p) PORT="$OPTARG";
       ;;
       n) NAME="$OPTARG";
+      ;;
+      e) ENV="$OPTARG";
       ;;
       \?) echo "Invalid option -$OPTARG" >&2
       ;;
     esac
   done
 
-  ENV='dev'
+  if [ "$ENV" != "dev" ] && [ "$ENV" != "test" ]
+    then
+      echo -e "[info] You did not specify the -e flag as test or dev, or specified"
+      echo -e "       it as an invalid value, we are assuming dev."
+      ENV='dev'
+  fi
 
   if [ -z "$PORT" ]; then echo "[error] The argument -p is required. Use -p 80 if you're not sure what to use."; exit 1; fi
   if [ -z "$ENV" ]; then
