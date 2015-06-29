@@ -74,9 +74,11 @@ To test that our code makes sense, we must build the docker machine, using the `
 
     test:
       override:
-        - ./scripts/deploy.sh -p80
+        - ./dcycle/deploy.sh -p80
 
-Once you added this file (with `git add`), committed your change and pushed it back to GitHub, within minutes you will have a passing build on your [CircleCI](https://circleci.com) dashboard.
+Once you added this file (with `git add`), committed your change and pushed it back to GitHub, within minutes you will have a passing build on your [CircleCI](https://circleci.com) dashboard:
+
+
 
 To see what a failing build looks like, introduce an error into your `_config.yml` file: change `title:` to `title::` with two colons. This is an error and your build should fail.
 
