@@ -85,7 +85,7 @@ To see what a failing build looks like, introduce an error into your `_config.ym
 
 <img src="/img/2015-05-20-02-circle-error.png" />
 
-Fix your error, and now you should see that your build is "Fixed".
+Fix your error (put back the colon after title), push your commit, wait a bit, and now you should see that your build is "Fixed" again.
 
 Conclusion
 -----
