@@ -81,7 +81,7 @@ Once you added this file (with `git add`), committed your change and pushed it b
 <img src="/img/2015-05-20-02-circle-success.png" />
 
 
-To see what a failing build looks like, introduce an error into your `_config.yml` file: change `title:` to `title::` with two colons. This is an error and your build should fail.
+To see what a failing build looks like, introduce an error into your `_config.yml` file: change `title: ` to `title` without the colon. This is an error and your build should fail.
 
 <img src="/img/2015-05-20-02-circle-error.png" />
 
