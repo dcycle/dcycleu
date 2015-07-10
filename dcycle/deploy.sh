@@ -1,4 +1,4 @@
-echo -e "[  >>] Start of script $0"
+echo -e "[  >>] Start of script $0 (from $(pwd))"
 echo -e "\n* * * * * * * * * * * * * * * * * * * * * * * * "
 echo -e "DCYCLE deploy.sh"
 echo -e "See http://box.dcycle.com for instructions and"
@@ -45,13 +45,11 @@ else
     echo -e "[notice] The argument -n was not set, so we are assuming 'normal'"
     NAME=normal;
   fi
-  if [ $ENV != 'prod' ]; then
-    if [ $ENV != 'dev' ]; then
-      echo -e "[notice] The argument -e was set to $ENV, which is not valid. We are"
-      echo -e "         assuming that you want to deploy a development environment (dev)."
-      echo -e "         You can also use -e prod to avoid installing development tools on"
-      echo -e "         your container."; ENV=dev;
-    fi
+  if [ "$ENV" != "dev" ] && [ "$ENV" != "test" ]; then
+    echo -e "[notice] The argument -e was set to $ENV, which is not valid. We are"
+    echo -e "         assuming that you want to deploy a development environment (dev)."
+    echo -e "         You can also use -e prod to avoid installing development tools on"
+    echo -e "         your container."; ENV=dev;
   fi
 
   PROJECTNAME=$(basename $(pwd))-$ENV-$NAME

@@ -1,5 +1,0 @@
-from jekyll/jekyll:latest
-
-ADD . /srv/jekyll/
-
-RUN cd /srv/jekyll && jekyll build .
