@@ -5,7 +5,7 @@ subtitle:   "Continuous integration (CI) is fragile, and is only useful if used 
 date:       2015-05-22 12:00:00
 author:     "Dcycle"
 header-img: "img/post-bg-01.jpg"
-class:      "2c"
+class:      "2"
 parent:     "<a href=\"/class-02-continuous-integration\">Class 2: Continuous integration</a>"
 ---
 
