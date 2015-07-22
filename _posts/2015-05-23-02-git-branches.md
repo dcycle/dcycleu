@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "2.4 Git branches and continuous integration"
+title:      "2.3 Git branches and continuous integration"
 subtitle:   "Basic git branching, and why having a stable and an unstable branch is useful."
 date:       2015-05-23 12:00:00
 author:     "Dcycle"
