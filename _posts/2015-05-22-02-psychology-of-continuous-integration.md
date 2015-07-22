@@ -28,28 +28,28 @@ When writing code, there are a number of best practices such as commenting your 
 
 These all take time, and if you are in a rush to code some feature, you can avoid all or some of these best practices. This is known as technical debt because you are essentially borrowing against the future:
 
- * If you don't comment your code, you'll work faster, but some poor sucker (probably you) will spend hours, instead of minutes, figuring what out what the code is actually accomplishing.
+ * If you don't comment your code, you'll work faster, but in six months some poor sucker (probably you) will spend hours, instead of minutes, figuring what out what the code is actually accomplishing.
  * If you don't write automated tests, a fix to something seemingly unrelated will break a feature, probably just before a long weekend.
 
 Like monetary debt, technical debt is sometimes useful: if you're launching your site the next day, less comments and a faster deployment might be a good tradeoff. But like monetary debt, technical debt is not something you should ignore.
 
 Continuous integration limits technical debt because it provides a quality threshold under which your project is failing, so it's harder for you to lower the quality of your code too much for the sake of faster development.
 
-Right now, our quality threshold for a project to fail is really very low: if it's impossible to compile a site, the project should be in a failing state. That's pretty obvious. However, once you have your CI server in place (as you do), over time you might want to increase your quality threshold. For example, your build might fail if:
+With the CircleCI check we implemented in the previous class, our quality threshold for a project to fail is really very low: if it's impossible to compile a site, the project should be in a failing state. That's pretty obvious. However, once you have your CI server in place (as you do), over time you might want to increase your quality threshold. For example, your build might fail if:
 
  * automated tests are failing.
  * you don't have at least a certain percentage of comments in your code.
  * your CSS or HTML doesn't pass some industry-standard validation.
  * your test coverage (the percentage of code which actually runs during automated tests) is too low.
 
-Once your team has accepted these thresholds, everyone will want to avoid being the person who "broke" the project, quality will remain higher, and technical debut will accrue at a lower pace.
+Once your team has accepted these thresholds, everyone will want to avoid being the person who "broke" the project, quality will remain higher, and technical debt will accrue at a lower pace.
 
 Double your estimates
 -----
 
 So if you're borrowing less from the future to deploy code faster today, that effort has to come from somewhere: whatever you do will take longer because it will be of a higher quality. Furthermore, there is an effort in maintaining your CI server and scripts.
 
-All of this adds up (roughly) to doubling your estimates. Of course, this will pay you dividends in the future in the form of fewer bugs, less crises, and higher quality overall. Practitioners of CI think the trade-off is worth it in the long-term.
+All of this adds up (roughly) to doubling your estimates. Of course, this will pay for itself in the future in the form of fewer bugs, less crises, and higher quality overall. Practitioners of CI think the trade-off is worth it in the long-term.
 
 But CI is not a magic bullet, and you must decide if it is right for you. If you think it's not, you might want to reconsider taking this course!
 
@@ -66,7 +66,7 @@ In fact, this does not just apply to CI, but essentially to every aspect of this
 
 The answer, alas!, is "nothing": no crises, no bugs, no regressions, no technical debt. Well, less of these actually.
 
-"Nothing" is hard to sell:
+"Nothing" is not shiny and new, and it's hard to sell:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ofOSlsNz5I8?list=RDofOSlsNz5I8" frameborder="0" allowfullscreen></iframe>
 
@@ -74,7 +74,7 @@ When are development teams in the market for "nothing"? Well, you need to wait f
 
 To avoid frustration, don't try to sell this stuff to teams who are not ready for it.
 
-Selling quality to clients is easier: do not give them the choice. If you are responding to an RFP, seek out those which require best practices if possible, and never itemize CI or any other best practice on your response. In the same way, electricians won't bill you having the right tools, a window cleaner won't bill you for a safety harness. These are just part of the job.
+Selling quality to clients is easier than selling it to technical people, because clients (wrongly) assume us web folks are doing all this already. If you are responding to an RFP, seek out those which require best practices if possible, and never itemize CI or any other best practice on your response. In the same way, electricians won't bill you for having the right tools, a window cleaner won't bill you for a safety harness. These are just part of the job.
 
 Visibility and transparency
 -----
@@ -91,7 +91,7 @@ One advantage of monitoring your builds is that they become important. Everyone 
 
 Another advantage has to do with communication with non-technical people. Managers and clients are generally nervous when dealing with developers: they have no idea how things are progressing, apart from the occasional "We're almost done".
 
-Having a visible CI dashboard can provide non-technical stakeholders with data they can understand: whether a project is passing or failing (and if it's failing, who broke it), when it was last tested (yesterday, or a month ago). Eventually, you could wire up your CI dashboard to provide trends and other metrics which everyone understands: over time, do we have more or less test coverage, more or less code complexity, more or less comments, more or less adherence to coding standards.
+Having a visible CI dashboard can provide non-technical stakeholders with data they can understand: whether a project is passing or failing (and if it's failing, who broke it), when it was last tested (yesterday, or a month ago). Eventually, you could wire up your CI dashboard to provide trends and other metrics which everyone understands: over time, do we have more or less test coverage? More or less code complexity? More or fewer comments? More or less adherence to coding standards?
 
 Your CI server will grow with time to contain all the information that is important to your team.
 
@@ -104,7 +104,7 @@ Your team is faced with a choice: log onto the production site and "fix" it with
 
 This is where teams are often in a crunch and have to make a decision. Do you, "just this once", "fix" the problem on the production server, or do you go through the process? Although there might be extreme examples where a hack to the production server is the better choice, that is a case of subverting the process: your version control system contains no trace of the change, your Docker container becomes somehow special because you made a change to it, and your CI dashboard no longer reflects reality.
 
-It is obvious that all of this is technical debt, and should probably be avoided. Many teams who are invested in CI keep their production servers under lock down: it is literally impossible to log in a change them, as everything must be done through the CI process.
+It is obvious that all of this is technical debt, and should probably be avoided. Many teams who are invested in CI keep their production servers under lock down: it is literally impossible to log in to change them, as everything must be done through the CI process.
 
 Conclusion
 -----
