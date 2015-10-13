@@ -286,7 +286,7 @@ In the above example, if the project maintainer was asked to merge in `semicolon
     CONFLICT (content): Merge conflict in README.md
     Automatic merge failed; fix conflicts and then commit the result.
 
-Now let's go into our README.md file and fix the conflicts. In this case we want to apply both the capitalization and the semicolon at the end of lists, like so:
+Now let's go into our README.md file and fix the conflicts. In this case we want to apply both the capitalization and the semicolon at the end of lists, so that your file will end up looking like this:
 
     BRANCHING DEMO
 
@@ -309,4 +309,4 @@ Let's now commit our change, move back to master and now we will be able to merg
      README.md | 6 ++++++
      1 file changed, 6 insertions(+)
 
-The reason we want to fix the conflict in the feature branch and not in master is because the team responsible for the feature branch knows what they want to accomplish, and it is often harder for the person merging into master to know how to fix conflicts to achieve the desired result. Moreover, it is sometimes not even a human being merging branches into production, but some sort of automated script, so get in the habit of often merging in the production branch into your feature branches, and fixing conflicts in the production branches.
+The reason we want to fix the conflict in the feature branch and not in master is because the team responsible for the feature branch knows what they want to accomplish, and it is often harder for the person merging into master to know how to fix conflicts to achieve the desired result. Moreover, it is sometimes not even a human being merging branches into production, but some sort of automated script, so get in the habit of often merging in the production branch into your feature branches, and fixing conflicts there, never in the production branches.
